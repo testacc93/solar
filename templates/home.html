@@ -106,6 +106,22 @@
         th {
             background-color: #f2f2f2;
         }
+
+        .tm-site-name-btn {
+            background-color: #f1f1f1;
+            cursor: pointer;
+            padding: 10px 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        @media screen and (max-width: 768px) {
+            button span{
+                font-size:smaller;
+            }
+            button{
+                padding: 10px;
+            }
+            }
     </style>
 </head>
 
@@ -332,9 +348,9 @@
                                 <div class="row">
                                     <div class="col-xs-12">
                                         {% comment %} <h2 class="tm-site-name">SUNELEC INFRA LLP ?</h2> {% endcomment %}
-                                        <div><button class="tm-site-name" onclick="showTab('electrical')">Electrical
-                                                Work</button>
-                                            <button class="tm-site-name" onclick="showTab('solar')">Solar Work</button>
+                                        <div><button class="tm-site-name tm-site-name-btn" onclick="showTab('electrical')"><span>Electrical
+                                                Work</span></button>
+                                            <button class="tm-site-name tm-site-name-btn" onclick="showTab('solar')"><span>Solar Work</span></button>
                                         </div>
 
                                         <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-textbox-1-col" style="
